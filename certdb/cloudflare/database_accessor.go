@@ -54,7 +54,7 @@ type CertDBAccessor struct {
 }
 
 // StdCertDB is the standard certdb DBAccessor.
-var StdCertDB *CertDBAccessor = &CertDBAccessor{}
+var StdCertDB = &CertDBAccessor{}
 
 func wrapCertStoreError(err error) error {
 	if err != nil {
